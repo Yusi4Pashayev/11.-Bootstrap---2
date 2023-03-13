@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background-color: #040404;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.menu .logo {
+    width: 15%;
+}
+
+.menu .logo a {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.menu .logo a span {
+    font-size: 12px;
+    color: red;
+    font-weight: 600;
+}
+
+.menu nav {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu nav a:hover {
+    color: red;
+}
+
+.menu nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 70%;
+}
+
+.menu nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.menu .icons {
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .icons i:hover {
+    color: red;
+}
+
+.menu .c_us {
+    width: 20%;
+}
+
+.menu .contact_us {
+    padding: 12px;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.contact_us {
+    width: 13%;
+    padding: 12px;
+    border: 1px solid red;
+    text-align: center;
+    position: relative;
+}
+
+.contact_us:hover {
+    background-color: red;
+}
+
+.section1 {
+    background-color: #040404;
+    height: 100vh;
+    position: relative;
+    border-bottom: 1px dotted #a8a8a8;
+}
+
+.section1::after {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 6rem;
+    background-color: red;
+    z-index: 1;
+}
+
+.section1>img {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+}
+
+.section1 .content {
+    padding: 15% 0;
+    padding-right: 50%;
+}
+
+.section1 .content h1 {
+    font-size: 5.5rem;
+    color: red;
+    font-weight: 900;
+    padding-bottom: 1.5rem;
+}
+
+.section1 .content p {
+    padding-bottom: 1.5rem;
+    font-size: 20px;
+    color: #dbdbdb;
+}
+
+.section1 .contact_us {
+    padding: 1rem;
+}
+
+.section2 {
+    background-color: #040404;
+    border-bottom: 1px dotted #a8a8a8;
+    position: relative;
+}
+
+.section2::after {
+    content: '';
+    position: absolute;
+    bottom: -11%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 6rem;
+    background-color: red;
+    z-index: 1;
+}
+
+.section2 .all {
+    padding: 15% 0;
+}
+
+.section2 .board {
+    text-align: center;
+    padding: 0 10%;
+}
+
+.section2 .board i {
+    padding-bottom: 2rem;
+    font-size: 40px;
+    color: red;
+}
+
+.section2 .board h1 {
+    padding-bottom: 2rem;
+    color: #fff;
+    font-size: 27px;
+}
+
+.section2 .board p {
+    padding-bottom: 2rem;
+    color: #a3a3a3;
+}
+
+.section3 {
+    background-color: #040404;
+}
+
+.section3 .portfolio {
+    padding: 10% 0;
+}
+
+.section3 .content {
+    text-align: center;
+}
+
+.section3 .content h1 {
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+.section3 .content p {
+    color: #a3a3a3;
+    padding-bottom: 1rem;
+}
+
+.section3 .middle {
+    padding: 0 5%;
+}
+
+.section3 .box {
+    width: 100%;
+    text-align: center;
+    background-color: #191919;
+    padding: 7%;
+    cursor: pointer;
+}
+
+.section3 .box img {
+    width: 80%;
+}
+
+.section3 .box h1 {
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+.section3 .box p {
+    color: #a3a3a3;
+    padding-bottom: 1rem;
+    padding: 0 5%;
+}
+
+.section3 .first {
+    position: relative;
+    z-index: 1;
+    transition: .7s;
+    cursor: pointer;
+}
+
+.section3 .first::before {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255, 5, 5);
+    z-index: -1;
+    transition: .7s;
+}
+
+.section3 .first:hover {
+    box-shadow: -17px -16px 6px 7px rgb(252, 47, 47);
+    background-color: rgb(255, 57, 57);
+    bottom: 2%;
+}
+
+.section3 .first:hover::before {
+    width: 100%;
+    height: 100%;
+    background-color: #191919;
+}
+.section3 .third {
+    position: relative;
+    z-index: 1;
+    transition: .7s;
+}
+
+
+.section3 .second {
+    position: relative;
+    z-index: 1;
+    transition: .7s;
+}
+.section3 .second:hover {
+    bottom: 2%;
+}
+
+.section3 .third::before {
+    content: "";
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255, 5, 5);
+    z-index: -1;
+    transition: .7s;
+}
+
+.section3 .third:hover {
+    box-shadow: 17px 16px 6px 7px rgb(252, 47, 47);
+    background-color: rgb(255, 57, 57);
+    bottom: 2%;
+}
+
+.section3 .third:hover::before {
+    width: 100%;
+    height: 100%;
+    background-color: #191919;
+}
